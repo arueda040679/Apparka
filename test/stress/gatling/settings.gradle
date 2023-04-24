@@ -1,0 +1,13 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        jcenter()
+        mavenLocal()
+    }
+}
+
+rootProject.name = 'qa-tests'
+include 'qa-stress'
+//include 'theshire-accounts-qa-e2e'
+//include 'theshire-accounts-qa-stress'
+

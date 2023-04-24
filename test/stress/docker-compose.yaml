@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+ gatling_local:
+    image: mzegarra/docker-qa-stress:latest
+    #container_name: gatling
+    #command: [-s, customers.CustomersTest]
+    volumes:
+      - ./gatling:/opt/test/qa-tests
+    environment:
+     - GIT_USER=
+     - GIT_PWD=
+     - GIT_HOST=
+     - GIT_PROJECT=
+     - AZ_STORAGE_ACCOUNT_NAME=
+     - AZ_STORAGE_ACCOUNT_KEY=
+     - ENABLE_DOCKER=true
+     - ENABLE_REPLY=false
+     - TEST_NAME=estacionamientos.LoadTest
+    networks:
+      - proxynet
+networks:
+  proxynet:
+    name: deploy_default 

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+     <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4b7d7c61-72dc-478b-9152-78520faa98b3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.25.3" />
+    <PackageReference Include="Azure.Identity" Version="1.7.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Apparka.Services\Apparka.Services.csproj" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Lombok.NET" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <None Remove="Microsoft.Identity.Web" />
+    <None Remove="Azure.Messaging.ServiceBus" />
+    <None Remove="Microsoft.Extensions.Azure" />
+    <None Remove="Azure.Identity" />
+    <None Remove="Azure.Security.KeyVault.Secrets" />
+    <None Remove="Azure.Storage.Blobs" />
+    <None Remove="Microsoft.ApplicationInsights" />
+    <None Remove="Microsoft.ApplicationInsights.AspNetCore" />
+  </ItemGroup>
+</Project>

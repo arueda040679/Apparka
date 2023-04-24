@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+ 
+    <ProjectReference Include="..\Apparka.Core\Apparka.Core.csproj" />
+    <ProjectReference Include="..\Apparka.Repository\Apparka.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Users\" />
+    <None Remove="Microsoft.Extensions.Azure" />
+    <None Remove="Locations\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+</Project>

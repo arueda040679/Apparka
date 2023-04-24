@@ -1,0 +1,26 @@
+
+{
+  "type": "PERSON",
+  "accountHolder": {
+    "idc": "427875311",
+    "fullName": "Marlon Macedo Iberico",
+    "names": "Marlon",
+    "fatherLastName": "Macedo",
+    "motherLastName": "Iberico",
+    "isRegisterBcp": true,
+    "email": "marlonmacedo@bcp.com.pe",
+    "idUser": "bc8cf7fdfec852369470af103dde4252"
+  },
+  "accountDetail": {
+    "relatedDevice": {
+      "idDevice": "c4d9710aa1b954138c9659bac4414af5",
+      "uuid": "bf2d64e77d1646f189abb695f8a42111",
+      "phoneNumber": "+51921390649"
+    }
+  },
+  "coordinates": {
+    "latitude": 41.40338,
+    "longitude": 2.17403
+  },
+  "status": "CARD_PENDING"
+}

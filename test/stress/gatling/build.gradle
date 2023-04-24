@@ -1,0 +1,15 @@
+gradle.startParameter.continueOnFailure = true
+
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+        // maven {
+        //     credentials {
+        //        username System.getenv('ARTIFACTORY_USER') != null ? System.getenv('ARTIFACTORY_USER') : artifactory_user
+        //        password System.getenv('ARTIFACTORY_PWD') != null ? System.getenv('ARTIFACTORY_PWD') : artifactory_password
+        //     }
+        //     url "https://xxxxx.jfrog.io/xxx/rivendell-release/"
+        // }
+    }
+}

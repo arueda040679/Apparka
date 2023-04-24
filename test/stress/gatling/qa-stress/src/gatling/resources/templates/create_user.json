@@ -1,0 +1,12 @@
+{
+    "nombre": "${name}",
+    "amaterno": "${lastName}",
+    "apaterno": "${motherName}",
+    "tipoDocumento": "1",
+    "nroDocumento": "${documentNumer}",
+    "telefono": "${phoneNumber}",
+    "email": "${mail}@de.com",
+    "idComercio": "999092",
+    "so":"${so}",
+    "imei":"${imei}"
+  }

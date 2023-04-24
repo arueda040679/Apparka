@@ -1,0 +1,10 @@
+{
+    "idUsuario":"${userId}",
+    "token":"${token}",
+    "bin":"4563",
+    "pan":"4",
+    "brand":"5",
+    "issuer":"6",
+    "so":"${so}",
+    "imei":"${imei}"
+}

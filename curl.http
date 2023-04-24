@@ -1,0 +1,49 @@
+###
+POST https://localhost:7261/api/usuario/setTokenRegistrar HTTP/1.1
+content-type: application/json
+
+{
+    "idUsuario":"1",
+    "token":"4c31ee19-9800-4aab-bef9-025904b0b7bc",
+    "bin":"4563",
+    "pan":"4",
+    "brand":"5",
+    "issuer":"6",
+    "so":"android",
+    "imei":"1234"
+}
+
+###
+POST https://localhost:7261/api/usuario/setTokenEliminar HTTP/1.1
+content-type: application/json
+
+{
+    "idUsuario":"1",
+    "token":"12358901",
+    "so":"android",
+    "imei":"1234"
+}
+
+###
+GET https://localhost:7261/api/estacionamiento/getEstacionamiento/1 HTTP/1.1
+content-type: application/json
+
+###
+https://devapibackendapparka-csonic.azurewebsites.net/api/Estacionamiento/getEstacionamiento/17
+content-type: application/json
+
+
+###
+POST https://devapibackendapparka-csonic.azurewebsites.net/api/usuario/setTokenRegistrar HTTP/1.1
+content-type: application/json
+
+{
+    "idUsuario":"1",
+    "token":"4c31ee19-9800-4aab-bef9-025904b0b7bc",
+    "bin":"4563",
+    "pan":"4",
+    "brand":"5",
+    "issuer":"6",
+    "so":"android",
+    "imei":"1234"
+}

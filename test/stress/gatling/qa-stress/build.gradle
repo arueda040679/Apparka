@@ -1,0 +1,27 @@
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.io.gatling.gradle:gatling-gradle-plugin:3.5.1"
+  }
+}
+
+apply plugin: "io.gatling.gradle"
+apply plugin: 'scala'
+
+
+dependencies {
+    gatlingImplementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+  	gatlingImplementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.68'
+  	gatlingImplementation group: 'com.auth0', name: 'java-jwt', version: '3.14.0'
+
+
+}
+
+gatling {
+  logLevel = 'WARN' // logback root level
+  logHttp = 'NONE' // set to 'ALL' for all HTTP traffic in TRACE, 'FAILURES' for failed HTTP traffic in DEBUG
+}
